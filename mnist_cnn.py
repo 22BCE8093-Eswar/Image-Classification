@@ -115,9 +115,29 @@ _, predicted = torch.max(outputs, 1)
 for i in range(5):
     imshow(images[i].cpu(), labels[i].item(), predicted[i].item())
 
-# Plot training loss
+import os
+
+# Create folder for screenshots
+os.makedirs("screenshots", exist_ok=True)
+
+def imshow_save(img, label, pred, filename):
+    img = img / 2 + 0.5  # unnormalize
+    npimg = img.numpy()
+    plt.imshow(np.transpose(npimg, (1, 2, 0)), cmap='gray')
+    plt.title(f'True: {label}, Pred: {pred}')
+    plt.axis('off')
+    plt.savefig(filename)
+    plt.close()
+
+# Show & save first 5 predictions
+for i in range(5):
+    filepath = f"screenshots/sample_pred_{i+1}.png"
+    imshow_save(images[i].cpu(), labels[i].item(), predicted[i].item(), filepath)
+plt.figure()
 plt.plot(range(1, num_epochs+1), train_losses, marker='o')
 plt.xlabel('Epoch')
 plt.ylabel('Loss')
 plt.title('Training Loss Curve')
-plt.show()
+plt.grid(True)
+plt.savefig("screenshots/training_loss_curve.png")
+plt.close()
