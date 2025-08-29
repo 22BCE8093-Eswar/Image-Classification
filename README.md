@@ -62,6 +62,22 @@ To manually download MNIST, place the raw files under ./data/MNIST/raw/ and set 
 
 Screenshots
 Sample Predictions:
+<table>
+  <tr>
+    <th> Prediction 1</th>
+    <th> Prediction 2</th>
+    <th> Prediction 3</th>
+    <th> Prediction 4</th>
+    <th> Prediction 5</th>
+  </tr>
+  <tr>
+    <td><img src="assets/prediction1.png" width="220"/> </td>
+    <td><img src="assets/prediction2.png" width="220"/> </td>
+    <td><img src="assets/prediction3.png" width="220"/> </td>
+    <td><img src="assets/prediction4.png" width="220"/> </td>
+    <td><img src="assets/prediction5.png" width="220"/> </td>
+  </tr>
+</table>
 
 Training Loss Curve:
 
