@@ -56,11 +56,11 @@ MNIST: Handwritten digits dataset with 60,000 training images and 10,000 test im
 
 Optionally, FashionMNIST can be used if MNIST download fails.
 
-
-
 For GPU acceleration, ensure CUDA is installed and available.
 
 To manually download MNIST, place the raw files under ./data/MNIST/raw/ and set download=False in the script.
+
+
 
 **Screenshots**
 
@@ -94,5 +94,5 @@ Training Loss Curve:
 
 **References**
 
-PyTorch Documentation
+PyTorch Documentation,
 MNIST Dataset
