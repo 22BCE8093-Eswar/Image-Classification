@@ -27,7 +27,9 @@ Install dependencies using pip:
 
 ```bash
 pip install torch torchvision matplotlib numpy
+```
 Usage
+```bash
 Clone the repository or download the mnist_cnn.py file.
 ```
 
@@ -71,16 +73,23 @@ Sample Predictions:
     <th> Prediction 5</th>
   </tr>
   <tr>
-    <td><img src="assets/prediction1.png" width="220"/> </td>
-    <td><img src="assets/prediction2.png" width="220"/> </td>
-    <td><img src="assets/prediction3.png" width="220"/> </td>
-    <td><img src="assets/prediction4.png" width="220"/> </td>
-    <td><img src="assets/prediction5.png" width="220"/> </td>
+    <td><img src="screenshots/sample_pred_1.png" width="220"/> </td>
+    <td><img src="screenshots/sample_pred_2.png" width="220"/> </td>
+    <td><img src="screenshots/sample_pred_3.png" width="220"/> </td>
+    <td><img src="screenshots/sample_pred_4.png" width="220"/> </td>
+    <td><img src="screenshots/sample_pred_5.png" width="220"/> </td>
   </tr>
 </table>
 
 Training Loss Curve:
-
+<table>
+  <tr>
+    <th> Training Loss Curve</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/training_loss_curve.png" width="220"/> </td>
+  </tr>
+</table>
 
 References
 PyTorch Documentation
