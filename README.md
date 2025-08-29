@@ -51,7 +51,7 @@ Displays sample images with true vs predicted labels
 
 Plots training loss curve
 
-Dataset
+**Dataset**
 MNIST: Handwritten digits dataset with 60,000 training images and 10,000 test images.
 
 Optionally, FashionMNIST can be used if MNIST download fails.
@@ -62,7 +62,8 @@ For GPU acceleration, ensure CUDA is installed and available.
 
 To manually download MNIST, place the raw files under ./data/MNIST/raw/ and set download=False in the script.
 
-Screenshots
+**Screenshots**
+
 Sample Predictions:
 <table>
   <tr>
@@ -91,7 +92,7 @@ Training Loss Curve:
   </tr>
 </table>
 
-References
-PyTorch Documentation
+**References**
 
+PyTorch Documentation
 MNIST Dataset
